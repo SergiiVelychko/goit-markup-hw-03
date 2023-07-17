@@ -1,0 +1,312 @@
+:root {
+   --iris: #4D5AE5;
+   --ocean: #404BBF;
+   --navyblue: #2E2F42;
+   --color: #31D0AA;
+   --slate: #434455;
+   --cornflower: #E7E9FC;
+   --cloud: #F4F4FD;
+   --white: #FFFFFF;
+ }
+
+body {
+   font-family: Roboto, sans-serif;
+   color: var(--slate);
+   background-color: var(--white);
+}
+
+a {
+   color: currentColor;
+}
+
+.link { 
+   text-decoration: none;
+} 
+
+.link:hover {
+   color: var(--ocean);
+}
+
+.link:focus {
+   color: var(--ocean);
+}
+
+.list {   
+   list-style: none;
+}
+
+.visually-hidden {  
+   border: 0;   
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
+.address {
+   font-style: normal;
+}
+ /* ----------------------Header Studio & Portfolio-------------------------- */
+
+.header-navigation {
+}
+
+.header-logo {
+   color: var(--iris);
+   font-family: Raleway, sans-serif;
+   font-size: 18px;
+   font-weight: 800;
+   line-height: 1.17;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;;
+}
+
+.header-logo-f {
+   color: var(--navyblue);
+}
+
+.header-menu {
+   color: var(--navyblue);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+} 
+
+.header-menu-link {
+   color: var(--navyblue);
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+}
+
+.header-menu-link:hover {
+   color: var(--ocean);
+}
+
+.header-menu-link:focus {
+   color: var(--ocean);
+}
+
+.header-address {
+}
+
+.header-address-item {
+}
+
+.header-address-link {
+   color: var(--slate);
+   font-style: normal;
+   font-size: 16px;
+   line-height: 1.5; 
+   letter-spacing: 0.02em;
+}
+
+/* ---------------------------Hero Studio-----------------------*/
+
+.hero {
+background-color: var(--navyblue);
+}
+
+.hero-title {
+   color: var(--white);
+   text-align: center;
+   font-size: 56px;
+   line-height: 1.07;
+   letter-spacing: 0.02em;   
+}
+
+.hero-btn {
+   color: var(--white);
+   background-color: var(--iris);
+   font-family: Roboto, sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 1.5;
+   letter-spacing: 0.04em;
+   background: var(--iris);
+   cursor: pointer;
+}
+
+.hero-btn:hover {
+   background-color: var(--ocean);
+}
+
+.hero-btn:focus {
+   background-color: var(--ocean);
+}
+
+/* ----------------------------Advantages Studio -----------------*/
+
+.advantages {
+}
+
+.visually-hidden {
+}
+
+.advantages-list {
+}
+
+.advantages-list-item {
+}
+
+.advantages-subtitle {
+   color: var(--navyblue);
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 1.2; 
+   letter-spacing: 0.02em;
+}
+
+.advantages-text {
+   color: var(--slate);
+   font-size: 16px;
+   line-height: 1.5; 
+   letter-spacing: 0.02em;
+}
+
+/* -----------------------------Made Studio-------------------------- */
+
+.made {
+}
+
+.made-title {
+   color: var(--navyblue);
+   text-align: center;
+   font-size: 36px;
+   line-height: 1.11; 
+   letter-spacing: 0.02em;
+   text-transform: capitalize;
+}
+
+.made-list {
+}
+
+.made-list-item {
+}
+
+/* -------------------------------Team Studio------------------ */
+
+.team {
+   background-color: var(--cloud);
+}
+
+.team-title {
+   color: var(--navyblue);
+   text-align: center;
+   font-size: 36px;
+   line-height: 1.11; 
+   letter-spacing: 0.02em;
+   text-transform: capitalize;
+}
+
+.team-list {
+}
+
+.team-list-item {
+   background-color: var(--white);
+}
+
+.team-list-name {
+   color: var(--navyblue);
+   text-align: center;
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 1.2; 
+   letter-spacing: 0.02em;
+}
+
+.team-list-profession {
+   color: var(--slate);
+   text-align: center;
+   font-size: 16px;
+   line-height: 1.5; 
+   letter-spacing: 0.02em;
+}
+
+/* -------------------------Footer Studio & Portfolio--------------------------------- */
+
+.footer {
+   color: var(--iris);
+   font-size: 18px;
+   font-weight: 800;
+   line-height: 1.17; 
+   letter-spacing: 0.03em;
+   text-transform: uppercase; 
+   background-color: var(--navyblue);  
+}
+
+.footer-logo {
+   color: var(--iris);
+   font-family: Raleway, sans-serif;
+   font-size: 18px;
+   font-weight: 800;
+   line-height: 1.17; 
+   letter-spacing: 0.03em;
+   text-transform: uppercase; 
+   background-color: var(--navyblue);    
+}
+
+.footer-logo-f {
+   color: var(--cloud);
+} 
+
+.footer-text {
+   color: var(--cloud);
+   font-size: 16px;
+   line-height: 1.5; 
+   letter-spacing: 0.02em;
+}
+
+/* ---------------------------Filter Portfolio--------------------------- */
+.filter-button {
+   color: var(--iris);
+   background-color: var(--cloud);
+   text-align: center;
+   font-family: Roboto, sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 1.5; 
+   letter-spacing: 0.04em;
+   cursor: pointer;
+   justify-content: center;
+   border: 1px solid var(--cornflower);
+   background: var(--cloud);
+}
+
+.filter-button:hover {
+   color: var(--white);
+   background-color: var(--ocean);
+}
+
+.filter-button:focus {
+   color: var(--white);
+   background-color: var(--ocean);
+}
+/* -------------------------------Card Portfolio------------------------ */
+
+.card-list {
+}
+
+.card-list-item {
+ 
+}
+
+.card-list-service {
+   color: var(--navyblue);
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 1.2; 
+   letter-spacing: 0.02em;
+}
+
+.card-list-app {
+   color: var(--slate);
+   font-size: 16px;
+   line-height: 1.5; 
+   letter-spacing: 0.02em;
+}
+
