@@ -15,6 +15,17 @@ body {
    background-color: var(--white);
 }
 
+
+.container { 
+   /* width: 1158px; */
+   width: 100%; 
+   max-width: 1158px;
+   padding-left: 15px;  
+   padding-right: 15px;  
+   margin: 0 auto;
+   outline: 2px solid red;
+   }
+
 a {
    color: currentColor;
 }
@@ -35,20 +46,56 @@ a {
    list-style: none;
 }
 
+p,h1,h2,h3,h4,h5,h6 {
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+ul,ol {
+   padding-left: 0;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+img {
+   display:block;
+}
+
 .visually-hidden {  
    border: 0;   
    white-space: nowrap;
    clip-path: inset(100%);
    clip: rect(0 0 0 0);
    overflow: hidden;
+
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
 }
 
-.address {
-   font-style: normal;
-}
  /* ----------------------Header Studio & Portfolio-------------------------- */
+.header {
+padding-top: 24px;
+padding-bottom: 24px;
+}
+
+.header-container {
+   display: flex;
+   align-items: center; 
+}
 
 .header-navigation {
+   display: flex;  
+   align-items: center; 
+   margin-right: auto;
+   gap: 100px;
 }
 
 .header-logo {
@@ -72,6 +119,8 @@ a {
    font-weight: 500;
    line-height: 1.5;
    letter-spacing: 0.02em;
+   display: flex;  
+   gap: 40px;
 } 
 
 .header-menu-link {
@@ -90,11 +139,19 @@ a {
    color: var(--ocean);
 }
 
+.address {
+   font-style: normal;
+   display: flex;
+}
+
 .header-address {
+   display: flex;
+   /* margin-left: auto; */
 }
 
 .header-address-item {
 }
+
 
 .header-address-link {
    color: var(--slate);
@@ -102,23 +159,45 @@ a {
    font-size: 16px;
    line-height: 1.5; 
    letter-spacing: 0.02em;
+   
 }
 
 /* ---------------------------Hero Studio-----------------------*/
 
 .hero {
-background-color: var(--navyblue);
+   background-color: var(--navyblue);
+   /* padding-bottom: 120px; */
 }
+
+.hero-wrap {
+   /* padding: 120px; */
+}
+
+
+
+/* .hero-title-text {
+   padding: 188px 472px 292px 472px;
+}
+
+.hero-title-button {
+   padding: 356px 635px 188px 636px;
+} */
 
 .hero-title {
    color: var(--white);
+   width: 496px;
+   height: 120px;
    text-align: center;
    font-size: 56px;
    line-height: 1.07;
-   letter-spacing: 0.02em;   
+   letter-spacing: 0.02em; 
+   margin-bottom: 48px;
+   display: block;
+   margin: 0 auto;
+   
 }
 
-.hero-btn {
+.hero-button {
    color: var(--white);
    background-color: var(--iris);
    font-family: Roboto, sans-serif;
@@ -126,8 +205,15 @@ background-color: var(--navyblue);
    font-weight: 500;
    line-height: 1.5;
    letter-spacing: 0.04em;
-   background: var(--iris);
    cursor: pointer;
+   display: block;
+   margin: 0 auto;
+   padding: 16px 32px;
+   border-radius: 4px;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+   /* display: inline-flex; */
+   align-items: flex-start;
+   gap: 10px;
 }
 
 .hero-btn:hover {
@@ -141,16 +227,23 @@ background-color: var(--navyblue);
 /* ----------------------------Advantages Studio -----------------*/
 
 .advantages {
+   padding-top: 120px;
+   padding-bottom: 120px;
 }
 
 .visually-hidden {
 }
 
 .advantages-list {
+   display: flex;
+   gap: 24px;
+   
 }
 
 .advantages-list-item {
-}
+   width: calc((100%-3*24px)/4);
+   /* gap: 8px; */
+} 
 
 .advantages-subtitle {
    color: var(--navyblue);
@@ -159,18 +252,25 @@ background-color: var(--navyblue);
    font-weight: 500;
    line-height: 1.2; 
    letter-spacing: 0.02em;
+   width: 264px;
+   height: 24px;
+   margin-bottom: 8px;
 }
+
 
 .advantages-text {
    color: var(--slate);
    font-size: 16px;
    line-height: 1.5; 
    letter-spacing: 0.02em;
+   width: 264px;
+   height: 72px;
 }
 
 /* -----------------------------Made Studio-------------------------- */
 
 .made {
+   
 }
 
 .made-title {
@@ -180,18 +280,29 @@ background-color: var(--navyblue);
    line-height: 1.11; 
    letter-spacing: 0.02em;
    text-transform: capitalize;
+   /* height: 40px;
+   width: 323px; */
+   margin: 0 auto;
 }
 
+
 .made-list {
+ display: flex;
+ gap: 24px;
 }
 
 .made-list-item {
+   display: inline-flex;
+   flex-direction: column;
+   align-items: flex-start;
+   width: calc((100%-2*24px)/3);
 }
 
 /* -------------------------------Team Studio------------------ */
 
 .team {
    background-color: var(--cloud);
+   padding-top: 120px;
 }
 
 .team-title {
@@ -201,13 +312,27 @@ background-color: var(--navyblue);
    line-height: 1.11; 
    letter-spacing: 0.02em;
    text-transform: capitalize;
+   padding-top: 120px;
+   /* width: 100%;
+   max-width: 162px; */
+   margin: 0 auto;
 }
 
 .team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-bottom: 120px;
 }
 
 .team-list-item {
    background-color: var(--white);
+   width: calc((100%-3*24)/4);
+}
+
+.team-list-text {
+   margin-top: 32px;
+   margin-bottom: 32px;
 }
 
 .team-list-name {
@@ -217,6 +342,7 @@ background-color: var(--navyblue);
    font-weight: 500;
    line-height: 1.2; 
    letter-spacing: 0.02em;
+   margin-bottom: 8px;
 }
 
 .team-list-profession {
@@ -228,6 +354,11 @@ background-color: var(--navyblue);
 }
 
 /* -------------------------Footer Studio & Portfolio--------------------------------- */
+/* 
+.footer-container {
+   display: flex;
+   align-items: center; 
+} */
 
 .footer {
    color: var(--iris);
@@ -237,6 +368,8 @@ background-color: var(--navyblue);
    letter-spacing: 0.03em;
    text-transform: uppercase; 
    background-color: var(--navyblue);  
+   /* padding-top: 100px;
+   padding-bottom: 100px; */
 }
 
 .footer-logo {
@@ -247,11 +380,12 @@ background-color: var(--navyblue);
    line-height: 1.17; 
    letter-spacing: 0.03em;
    text-transform: uppercase; 
-   background-color: var(--navyblue);    
-}
+   background-color: var(--navyblue);  
+   
 
 .footer-logo-f {
    color: var(--cloud);
+ 
 } 
 
 .footer-text {
@@ -259,9 +393,22 @@ background-color: var(--navyblue);
    font-size: 16px;
    line-height: 1.5; 
    letter-spacing: 0.02em;
+   /* margin-top: 18px; */
 }
 
 /* ---------------------------Filter Portfolio--------------------------- */
+
+.list-button {
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+}
+
+.button-container {
+   display: flex;
+   align-items: center;
+}
+
 .filter-button {
    color: var(--iris);
    background-color: var(--cloud);
@@ -275,6 +422,8 @@ background-color: var(--navyblue);
    justify-content: center;
    border: 1px solid var(--cornflower);
    background: var(--cloud);
+   display: flex;
+   align-items: center;
 }
 
 .filter-button:hover {
@@ -289,9 +438,22 @@ background-color: var(--navyblue);
 /* -------------------------------Card Portfolio------------------------ */
 
 .card-list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 24px 48px;
 }
 
 .card-list-item {
+display: flex;
+width: 360px;
+height: 420px;
+padding-bottom: 0px;
+flex-direction: column;
+align-items: flex-start;
+gap: 32px;
+flex-shrink: 0;
+border: 1px solid var(--cornflower, #E7E9FC);
+background: var(--white, #FFF);
  
 }
 
