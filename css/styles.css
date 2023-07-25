@@ -279,6 +279,7 @@ padding: 24px 0;
    letter-spacing: 0.02em;
    text-transform: capitalize;
    margin: 0 auto;
+   margin-bottom: 72px;
 }
 
 
@@ -292,7 +293,7 @@ padding: 24px 0;
    flex-direction: column;
    align-items: flex-start;
    width: calc((100%-2*24px)/3);
-   margin-top: 72px;
+   /* margin-top: 72px; */
    margin-bottom: 120px;
 }
 
@@ -326,8 +327,8 @@ padding: 24px 0;
 
 .team-list-item {
    background-color: var(--white);
-   width: calc((100%-3*24)/4);
    border-radius: 0px 0px 4px 4px; 
+   width: ((100% - 72px) / 4);
 }
 
 .team-list-text {
